@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Train Times</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+    
+		<div id="content"> <!-- redundant div -->
+
+			<h1>Rail Departures</h1>
+
+			<p id="about">A tool for showing departures from Station X at specific times (or not). It also shows the route and a rough location of the train currently.</p>
+
+			<br />
+			
+			<select>
+				<option>01:00</option>
+				<option>02:00</option>
+				<option>03:00</option>
+				<option>04:00</option>
+				<option>05:00</option>
+				<option>06:00</option>
+				<option>07:00</option>
+				<option>08:00</option>
+				<option>09:00</option>
+				<option>10:00</option>
+				<option>11:00</option>
+				<option>12:00</option>
+				<option>13:00</option>
+				<option>14:00</option>
+				<option>15:00</option>
+				<option>16:00</option>
+				<option>17:00</option>
+				<option>18:00</option>
+				<option>19:00</option>
+				<option>20:00</option>
+				<option>21:00</option>
+				<option>22:00</option>
+				<option>23:00</option>
+				<option>00:00</option>
+			</select>
+
+			<br />
+			<br />
+
+			<table id="display"> <!-- Maybe make this back into a div so i can force some sort of scroll -->
+				<thead>
+					<tbody>
+				<tr>
+					<th id="destination">Destination</th>
+					<th id="platform">Platform</th>
+					<th id="departure_time">Departs</th>
+					<th id="expected">Expected</th>
+				</tr>
+				</thead>
+
+					<tr class="departure">
+						<td><p>StationA - test</p></td>
+						<td class="td-platform">6B</td>
+						<td class="td-departs">16:00</td>
+						<td class="td-expected">On time</td> 
+					</tr>
+
+					<tr class="departure">
+						<td><p>StationB - test</p></td>
+					</tr>
+
+					<tr class="departure">
+						<td><p>StationC - test</p></td>
+					</tr>
+
+					<tr class="departure">
+						<td><p>StationD - test</p></td>
+					</tr>
+
+					<tr class="departure">
+						<td><p>StationE - test</p></td>
+						<td></td>
+					</tr>
+				</tbody>
+
+			</table>
+
+			<br />
+
+			<p>Approximate Train Location</p>
+
+			<div id="live">
+				<p>To add - canvas viewer for train location</p>
+				<!-- canvas element probably best for drawing circle - line - circle etc. to represent stations, like on Tube maps. Don't really need to draw circles (can just use img) but might be good to try first. Can use fixed view (only see stations in near future/past) or could do scrollbar (how would you make sure it's centered on train?) -->
+			</div>
+
+			<p id="footer">Made by <a href="http://github.com/Sillzen/train-repo-goes-here">Stefan Green</a>. Uses data from National Rail and Network Rail.</p>
+
+		</div>
+
+	</body>
+
+</html>
